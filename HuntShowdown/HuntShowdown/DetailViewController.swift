@@ -9,45 +9,38 @@
 import UIKit
 import WebKit
 
-class DetailViewController: UIViewController, WKUIDelegate {
+class DetailViewController: UIViewController, WKNavigationDelegate {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
     @IBOutlet weak var articleWebView: WKWebView!
     @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     
-    var sourURL: String?
-
     func configureView() {
-        // Update the user interface for the detail item.
-        if let detail = detailItem {
-            if let label = detailDescriptionLabel {
-                label.text = detail.description
+        if let sourURL = sourURL{
+            if let articleWebView = articleWebView {
+                articleWebView.navigationDelegate = self
+                articleWebView.load(URLRequest(url: URL(string: sourURL)!))
             }
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         configureView()
-        
-        if let sourURL = sourURL{
-            articleWebView.load(URLRequest(url: URL(string: sourURL)!))
-        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-    var detailItem: NSDate? {
+    
+    var sourURL: String? {
         didSet {
-            // Update the view.
             configureView()
         }
     }
 
-
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        indicatorView.isHidden = true
+    }
+    
 }
 

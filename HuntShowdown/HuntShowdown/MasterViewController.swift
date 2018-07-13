@@ -32,13 +32,20 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         self.tableView.register(UINib(nibName: "JeopardyTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "JeopardyCell")
         self.tableView.isScrollEnabled = false
+        self.tableView.allowsSelection = false
         
     }
     
     func updateUI() {
-        
-        indexLable.text = String(index + 1)
-        pointLable.text = String(points)
+        UIView.animate(withDuration: 0.2, animations: {
+            self.indexLable.font = UIFont.systemFont(ofSize: 28)
+            self.pointLable.font = UIFont.systemFont(ofSize: 28)
+        }) { (stop) in
+            self.indexLable.font = UIFont.systemFont(ofSize: 23)
+            self.pointLable.font = UIFont.systemFont(ofSize: 23)
+           self.indexLable.text = String(self.index + 1)
+            self.pointLable.text = String(self.points)
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -62,14 +69,12 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     @objc
     func insertNewObject(_ sender: Any) {
-//        objects.insert(NSDate(), at: 0)
-//        let indexPath = IndexPath(row: 0, section: 0)
-//        tableView.insertRows(at: [indexPath], with: .automatic)
     }
     
     @objc
     func skip(_ sender: Any) {
         gotoNextQuiz()
+        updateUI()
     }
 
     // MARK: - Segues
@@ -79,7 +84,6 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let object = objects[indexPath.row]
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                //controller.detailItem = object.standFirst
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
@@ -97,7 +101,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func gotoNextQuiz() {
         self.index += 1
-        self.tableView.scrollToRow(at: IndexPath(row: self.index, section: 0), at: UITableViewScrollPosition.top, animated: true)
+        self.tableView.scrollToRow(at: IndexPath(row: self.index, section: 0), at: UITableViewScrollPosition.bottom, animated: true)
     }
     
     // Mark: - Actions
@@ -137,5 +141,10 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return tableView.frame.size.height
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if let aCell = cell as? JeopardyTableViewCell {
+            aCell.updateUI(showQuiz: true)
+        }
+    }
 }
 

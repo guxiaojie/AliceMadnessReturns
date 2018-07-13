@@ -30,8 +30,6 @@ class JeopardyTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        nextView.isHidden = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -46,13 +44,14 @@ class JeopardyTableViewCell: UITableViewCell {
                 return
             }
             buzzing( sender.tag == quiz.correctAnswerIndex ? 1 : -1 )
-            nextView.isHidden = false
+            
+            updateUI(showQuiz: false)
             standfirstLb.text = quiz.standFirst
         }
     }
     
     @IBAction func next(_ sender: Button) {
-        nextView.isHidden = true
+        updateUI(showQuiz: false)
         if let next = nextQuiz {
             next()
         }
@@ -73,6 +72,17 @@ class JeopardyTableViewCell: UITableViewCell {
             btn1.setTitle(quiz.headlines[0], for: UIControlState.normal)
             btn2.setTitle(quiz.headlines[1], for: UIControlState.normal)
             btn3.setTitle(quiz.headlines[2], for: UIControlState.normal)
+            
+            btn1.titleLabel?.numberOfLines = 0
+            btn2.titleLabel?.numberOfLines = 0
+            btn3.titleLabel?.numberOfLines = 0
         }
+    }
+    
+    func updateUI(showQuiz: Bool) {
+        nextView.isHidden = showQuiz
+        btn1.isHidden = !showQuiz
+        btn2.isHidden = !showQuiz
+        btn3.isHidden = !showQuiz
     }
 }
