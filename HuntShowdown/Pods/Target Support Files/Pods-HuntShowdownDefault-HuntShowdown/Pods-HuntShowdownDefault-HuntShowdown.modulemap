@@ -1,0 +1,6 @@
+framework module Pods_HuntShowdownDefault_HuntShowdown {
+  umbrella header "Pods-HuntShowdownDefault-HuntShowdown-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,14 @@
+platform :ios, '8.0'
+use_frameworks!
+
+abstract_target 'HuntShowdownDefault' do
+    
+    pod 'Kingfisher', '~> 4.0'
+    
+    target 'HuntShowdown' do
+        target 'HuntShowdownTests' do
+            inherit! :search_paths
+
+        end
+    end
+end

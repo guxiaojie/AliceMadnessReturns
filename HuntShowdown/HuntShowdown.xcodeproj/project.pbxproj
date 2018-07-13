@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		320AF2CCDED92AD0DF595FD9 /* Pods_HuntShowdownTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEB0D171850CF7534C2892C /* Pods_HuntShowdownTests.framework */; };
+		4107D98A740B4E86EF9A4DAD /* Pods_HuntShowdownDefault_HuntShowdown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F93AD43D3B2F655E4D5952 /* Pods_HuntShowdownDefault_HuntShowdown.framework */; };
+		C600EC4220F76B8E00F09B30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C600EC4120F76B8E00F09B30 /* AppDelegate.swift */; };
+		C600EC4420F76B8E00F09B30 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C600EC4320F76B8E00F09B30 /* MasterViewController.swift */; };
+		C600EC4620F76B8E00F09B30 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C600EC4520F76B8E00F09B30 /* DetailViewController.swift */; };
+		C600EC4920F76B8E00F09B30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C600EC4720F76B8E00F09B30 /* Main.storyboard */; };
+		C600EC4B20F76B9200F09B30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C600EC4A20F76B9200F09B30 /* Assets.xcassets */; };
+		C600EC4E20F76B9200F09B30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C600EC4C20F76B9200F09B30 /* LaunchScreen.storyboard */; };
+		C600EC5920F76B9200F09B30 /* HuntShowdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C600EC5820F76B9200F09B30 /* HuntShowdownTests.swift */; };
+		C600EC8020F76BDB00F09B30 /* DailyBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = C600EC7B20F76BDB00F09B30 /* DailyBuzz.swift */; };
+		C600EC8120F76BDB00F09B30 /* 1game.json in Resources */ = {isa = PBXBuildFile; fileRef = C600EC7D20F76BDB00F09B30 /* 1game.json */; };
+		C600EC8220F76BDB00F09B30 /* game.json in Resources */ = {isa = PBXBuildFile; fileRef = C600EC7E20F76BDB00F09B30 /* game.json */; };
+		C600EC8320F76BDB00F09B30 /* ExtractionPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C600EC7F20F76BDB00F09B30 /* ExtractionPoint.swift */; };
+		C600EC8620F7736F00F09B30 /* JeopardyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C600EC8420F7736F00F09B30 /* JeopardyTableViewCell.swift */; };
+		C600EC8720F7736F00F09B30 /* JeopardyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C600EC8520F7736F00F09B30 /* JeopardyTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C600EC5520F76B9200F09B30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C600EC3620F76B8E00F09B30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C600EC3D20F76B8E00F09B30;
+			remoteInfo = HuntShowdown;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		025E4EFF67EB2B28198A6C90 /* Pods-HuntShowdownTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuntShowdownTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HuntShowdownTests/Pods-HuntShowdownTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1AAAC9189AB642E78161100E /* Pods-HuntShowdownTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuntShowdownTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HuntShowdownTests/Pods-HuntShowdownTests.release.xcconfig"; sourceTree = "<group>"; };
+		1EEB0D171850CF7534C2892C /* Pods_HuntShowdownTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuntShowdownTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65431179DE45C303CC1DB083 /* Pods-HuntShowdownDefault-HuntShowdown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuntShowdownDefault-HuntShowdown.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HuntShowdownDefault-HuntShowdown/Pods-HuntShowdownDefault-HuntShowdown.debug.xcconfig"; sourceTree = "<group>"; };
+		C600EC3E20F76B8E00F09B30 /* HuntShowdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuntShowdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C600EC4120F76B8E00F09B30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C600EC4320F76B8E00F09B30 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		C600EC4520F76B8E00F09B30 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C600EC4820F76B8E00F09B30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C600EC4A20F76B9200F09B30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C600EC4D20F76B9200F09B30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C600EC4F20F76B9200F09B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C600EC5420F76B9200F09B30 /* HuntShowdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuntShowdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C600EC5820F76B9200F09B30 /* HuntShowdownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuntShowdownTests.swift; sourceTree = "<group>"; };
+		C600EC5A20F76B9200F09B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C600EC7B20F76BDB00F09B30 /* DailyBuzz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyBuzz.swift; sourceTree = "<group>"; };
+		C600EC7D20F76BDB00F09B30 /* 1game.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1game.json; sourceTree = "<group>"; };
+		C600EC7E20F76BDB00F09B30 /* game.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = game.json; sourceTree = "<group>"; };
+		C600EC7F20F76BDB00F09B30 /* ExtractionPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtractionPoint.swift; sourceTree = "<group>"; };
+		C600EC8420F7736F00F09B30 /* JeopardyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeopardyTableViewCell.swift; sourceTree = "<group>"; };
+		C600EC8520F7736F00F09B30 /* JeopardyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JeopardyTableViewCell.xib; sourceTree = "<group>"; };
+		D2F93AD43D3B2F655E4D5952 /* Pods_HuntShowdownDefault_HuntShowdown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuntShowdownDefault_HuntShowdown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06883F9FCACD6DAA5E95479 /* Pods-HuntShowdownDefault-HuntShowdown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuntShowdownDefault-HuntShowdown.release.xcconfig"; path = "Pods/Target Support Files/Pods-HuntShowdownDefault-HuntShowdown/Pods-HuntShowdownDefault-HuntShowdown.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C600EC3B20F76B8E00F09B30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4107D98A740B4E86EF9A4DAD /* Pods_HuntShowdownDefault_HuntShowdown.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C600EC5120F76B9200F09B30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320AF2CCDED92AD0DF595FD9 /* Pods_HuntShowdownTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85C9EBBCB9BA29683820B3EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2F93AD43D3B2F655E4D5952 /* Pods_HuntShowdownDefault_HuntShowdown.framework */,
+				1EEB0D171850CF7534C2892C /* Pods_HuntShowdownTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0DDB78FD0A3739567A64024 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65431179DE45C303CC1DB083 /* Pods-HuntShowdownDefault-HuntShowdown.debug.xcconfig */,
+				F06883F9FCACD6DAA5E95479 /* Pods-HuntShowdownDefault-HuntShowdown.release.xcconfig */,
+				025E4EFF67EB2B28198A6C90 /* Pods-HuntShowdownTests.debug.xcconfig */,
+				1AAAC9189AB642E78161100E /* Pods-HuntShowdownTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C600EC3520F76B8E00F09B30 = {
+			isa = PBXGroup;
+			children = (
+				C600EC4020F76B8E00F09B30 /* HuntShowdown */,
+				C600EC5720F76B9200F09B30 /* HuntShowdownTests */,
+				C600EC3F20F76B8E00F09B30 /* Products */,
+				A0DDB78FD0A3739567A64024 /* Pods */,
+				85C9EBBCB9BA29683820B3EC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C600EC3F20F76B8E00F09B30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C600EC3E20F76B8E00F09B30 /* HuntShowdown.app */,
+				C600EC5420F76B9200F09B30 /* HuntShowdownTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C600EC4020F76B8E00F09B30 /* HuntShowdown */ = {
+			isa = PBXGroup;
+			children = (
+				C600EC4120F76B8E00F09B30 /* AppDelegate.swift */,
+				C600EC4320F76B8E00F09B30 /* MasterViewController.swift */,
+				C600EC4520F76B8E00F09B30 /* DetailViewController.swift */,
+				C600EC7B20F76BDB00F09B30 /* DailyBuzz.swift */,
+				C600EC7F20F76BDB00F09B30 /* ExtractionPoint.swift */,
+				C600EC7C20F76BDB00F09B30 /* Resouses */,
+				C600EC4720F76B8E00F09B30 /* Main.storyboard */,
+				C600EC8420F7736F00F09B30 /* JeopardyTableViewCell.swift */,
+				C600EC8520F7736F00F09B30 /* JeopardyTableViewCell.xib */,
+				C600EC4A20F76B9200F09B30 /* Assets.xcassets */,
+				C600EC4C20F76B9200F09B30 /* LaunchScreen.storyboard */,
+				C600EC4F20F76B9200F09B30 /* Info.plist */,
+			);
+			path = HuntShowdown;
+			sourceTree = "<group>";
+		};
+		C600EC5720F76B9200F09B30 /* HuntShowdownTests */ = {
+			isa = PBXGroup;
+			children = (
+				C600EC5820F76B9200F09B30 /* HuntShowdownTests.swift */,
+				C600EC5A20F76B9200F09B30 /* Info.plist */,
+			);
+			path = HuntShowdownTests;
+			sourceTree = "<group>";
+		};
+		C600EC7C20F76BDB00F09B30 /* Resouses */ = {
+			isa = PBXGroup;
+			children = (
+				C600EC7D20F76BDB00F09B30 /* 1game.json */,
+				C600EC7E20F76BDB00F09B30 /* game.json */,
+			);
+			path = Resouses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C600EC3D20F76B8E00F09B30 /* HuntShowdown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C600EC5D20F76B9200F09B30 /* Build configuration list for PBXNativeTarget "HuntShowdown" */;
+			buildPhases = (
+				D9962512468BE5D08FB5A323 /* [CP] Check Pods Manifest.lock */,
+				C600EC3A20F76B8E00F09B30 /* Sources */,
+				C600EC3B20F76B8E00F09B30 /* Frameworks */,
+				C600EC3C20F76B8E00F09B30 /* Resources */,
+				2A6B16520A5D0085C63B1D97 /* [CP] Embed Pods Frameworks */,
+				7014CF4787B1DDD947A9F58D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HuntShowdown;
+			productName = HuntShowdown;
+			productReference = C600EC3E20F76B8E00F09B30 /* HuntShowdown.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C600EC5320F76B9200F09B30 /* HuntShowdownTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C600EC6020F76B9200F09B30 /* Build configuration list for PBXNativeTarget "HuntShowdownTests" */;
+			buildPhases = (
+				BFB4615A0DB22D698D8E948E /* [CP] Check Pods Manifest.lock */,
+				C600EC5020F76B9200F09B30 /* Sources */,
+				C600EC5120F76B9200F09B30 /* Frameworks */,
+				C600EC5220F76B9200F09B30 /* Resources */,
+				C1A5EA489D5503FEB6516A6D /* [CP] Embed Pods Frameworks */,
+				FDBC09F0DADCEAA620D8F813 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C600EC5620F76B9200F09B30 /* PBXTargetDependency */,
+			);
+			name = HuntShowdownTests;
+			productName = HuntShowdownTests;
+			productReference = C600EC5420F76B9200F09B30 /* HuntShowdownTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C600EC3620F76B8E00F09B30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = SageGu;
+				TargetAttributes = {
+					C600EC3D20F76B8E00F09B30 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					C600EC5320F76B9200F09B30 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = C600EC3D20F76B8E00F09B30;
+					};
+				};
+			};
+			buildConfigurationList = C600EC3920F76B8E00F09B30 /* Build configuration list for PBXProject "HuntShowdown" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C600EC3520F76B8E00F09B30;
+			productRefGroup = C600EC3F20F76B8E00F09B30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C600EC3D20F76B8E00F09B30 /* HuntShowdown */,
+				C600EC5320F76B9200F09B30 /* HuntShowdownTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C600EC3C20F76B8E00F09B30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C600EC4E20F76B9200F09B30 /* LaunchScreen.storyboard in Resources */,
+				C600EC8720F7736F00F09B30 /* JeopardyTableViewCell.xib in Resources */,
+				C600EC8120F76BDB00F09B30 /* 1game.json in Resources */,
+				C600EC4B20F76B9200F09B30 /* Assets.xcassets in Resources */,
+				C600EC4920F76B8E00F09B30 /* Main.storyboard in Resources */,
+				C600EC8220F76BDB00F09B30 /* game.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C600EC5220F76B9200F09B30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A6B16520A5D0085C63B1D97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HuntShowdownDefault-HuntShowdown/Pods-HuntShowdownDefault-HuntShowdown-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HuntShowdownDefault-HuntShowdown/Pods-HuntShowdownDefault-HuntShowdown-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7014CF4787B1DDD947A9F58D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HuntShowdownDefault-HuntShowdown/Pods-HuntShowdownDefault-HuntShowdown-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFB4615A0DB22D698D8E948E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HuntShowdownTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1A5EA489D5503FEB6516A6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HuntShowdownTests/Pods-HuntShowdownTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9962512468BE5D08FB5A323 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HuntShowdownDefault-HuntShowdown-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDBC09F0DADCEAA620D8F813 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HuntShowdownTests/Pods-HuntShowdownTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C600EC3A20F76B8E00F09B30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C600EC8020F76BDB00F09B30 /* DailyBuzz.swift in Sources */,
+				C600EC8620F7736F00F09B30 /* JeopardyTableViewCell.swift in Sources */,
+				C600EC4620F76B8E00F09B30 /* DetailViewController.swift in Sources */,
+				C600EC8320F76BDB00F09B30 /* ExtractionPoint.swift in Sources */,
+				C600EC4420F76B8E00F09B30 /* MasterViewController.swift in Sources */,
+				C600EC4220F76B8E00F09B30 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C600EC5020F76B9200F09B30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C600EC5920F76B9200F09B30 /* HuntShowdownTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C600EC5620F76B9200F09B30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C600EC3D20F76B8E00F09B30 /* HuntShowdown */;
+			targetProxy = C600EC5520F76B9200F09B30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C600EC4720F76B8E00F09B30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C600EC4820F76B8E00F09B30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C600EC4C20F76B9200F09B30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C600EC4D20F76B9200F09B30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C600EC5B20F76B9200F09B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C600EC5C20F76B9200F09B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C600EC5E20F76B9200F09B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65431179DE45C303CC1DB083 /* Pods-HuntShowdownDefault-HuntShowdown.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AT63883WK;
+				INFOPLIST_FILE = HuntShowdown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test-pn.HuntShowdown";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C600EC5F20F76B9200F09B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F06883F9FCACD6DAA5E95479 /* Pods-HuntShowdownDefault-HuntShowdown.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AT63883WK;
+				INFOPLIST_FILE = HuntShowdown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test-pn.HuntShowdown";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C600EC6120F76B9200F09B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 025E4EFF67EB2B28198A6C90 /* Pods-HuntShowdownTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AT63883WK;
+				INFOPLIST_FILE = HuntShowdownTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test-pn.HuntShowdownTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HuntShowdown.app/HuntShowdown";
+			};
+			name = Debug;
+		};
+		C600EC6220F76B9200F09B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AAAC9189AB642E78161100E /* Pods-HuntShowdownTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AT63883WK;
+				INFOPLIST_FILE = HuntShowdownTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test-pn.HuntShowdownTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HuntShowdown.app/HuntShowdown";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C600EC3920F76B8E00F09B30 /* Build configuration list for PBXProject "HuntShowdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C600EC5B20F76B9200F09B30 /* Debug */,
+				C600EC5C20F76B9200F09B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C600EC5D20F76B9200F09B30 /* Build configuration list for PBXNativeTarget "HuntShowdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C600EC5E20F76B9200F09B30 /* Debug */,
+				C600EC5F20F76B9200F09B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C600EC6020F76B9200F09B30 /* Build configuration list for PBXNativeTarget "HuntShowdownTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C600EC6120F76B9200F09B30 /* Debug */,
+				C600EC6220F76B9200F09B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C600EC3620F76B8E00F09B30 /* Project object */;
+}
