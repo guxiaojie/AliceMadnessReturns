@@ -20,13 +20,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="457.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EoC-5q-saS">
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EoC-5q-saS" userLabel="Button">
                         <rect key="frame" x="16" y="247" width="288" height="50"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="XrQ-I7-4ar"/>
                         </constraints>
-                        <state key="normal" title="App communicates using CoreBluetoothApp communicates using CoreBluetoothApp communicates using CoreBluetooth">
+                        <state key="normal" title="App communicates using CoreBluetooth">
                             <color key="titleColor" white="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
                         <userDefinedRuntimeAttributes>
@@ -55,8 +55,9 @@
                             <action selector="buzzingIn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SDN-Zn-3kh"/>
                         </connections>
                     </button>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RZc-WS-iR5">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RZc-WS-iR5">
                         <rect key="frame" x="16" y="11" width="288" height="216"/>
+                        <color key="backgroundColor" white="0.8564453125" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="230" id="9P9-xA-09V"/>
                         </constraints>
@@ -84,17 +85,16 @@
                         </connections>
                     </button>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1w-Ng-d4I">
-                        <rect key="frame" x="16" y="235" width="288" height="212"/>
+                        <rect key="frame" x="16" y="242" width="288" height="205"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibI-v0-UFA">
-                                <rect key="frame" x="0.0" y="0.0" width="288" height="116.5"/>
-                                <string key="text">AirPrint is an Apple technology that helps you create full-quality printed output without the need to download or install drivers.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AirPrint is an Apple " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibI-v0-UFA">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" white="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5F-eZ-7eG">
-                                <rect key="frame" x="0.0" y="172" width="288" height="40"/>
+                                <rect key="frame" x="0.0" y="155" width="288" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ShU-al-3E3"/>
@@ -113,7 +113,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkV-Wy-NSF">
-                                <rect key="frame" x="0.0" y="117" width="288" height="40"/>
+                                <rect key="frame" x="0.0" y="100" width="288" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="M4H-rb-Mt2"/>
@@ -138,10 +138,10 @@
                             <constraint firstAttribute="trailing" secondItem="Y5F-eZ-7eG" secondAttribute="trailing" id="6CC-1F-bbT"/>
                             <constraint firstAttribute="trailing" secondItem="ibI-v0-UFA" secondAttribute="trailing" id="BDg-MP-jhy"/>
                             <constraint firstItem="hkV-Wy-NSF" firstAttribute="leading" secondItem="F1w-Ng-d4I" secondAttribute="leading" id="HDR-rP-WJH"/>
-                            <constraint firstItem="hkV-Wy-NSF" firstAttribute="top" secondItem="ibI-v0-UFA" secondAttribute="bottom" id="T9D-Nc-w5w"/>
+                            <constraint firstItem="hkV-Wy-NSF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ibI-v0-UFA" secondAttribute="bottom" priority="250" id="T9D-Nc-w5w"/>
                             <constraint firstItem="ibI-v0-UFA" firstAttribute="top" secondItem="F1w-Ng-d4I" secondAttribute="top" id="YhD-V9-Kr9"/>
                             <constraint firstAttribute="trailing" secondItem="hkV-Wy-NSF" secondAttribute="trailing" id="g6a-fF-XL3"/>
-                            <constraint firstAttribute="bottom" secondItem="Y5F-eZ-7eG" secondAttribute="bottom" id="hZd-Jk-NL9"/>
+                            <constraint firstAttribute="bottom" secondItem="Y5F-eZ-7eG" secondAttribute="bottom" constant="10" id="hZd-Jk-NL9"/>
                             <constraint firstItem="ibI-v0-UFA" firstAttribute="leading" secondItem="F1w-Ng-d4I" secondAttribute="leading" id="v9u-CZ-zN0"/>
                             <constraint firstItem="Y5F-eZ-7eG" firstAttribute="top" secondItem="hkV-Wy-NSF" secondAttribute="bottom" constant="15" id="w2a-dL-Tp2"/>
                         </constraints>
@@ -151,7 +151,7 @@
                 <constraints>
                     <constraint firstItem="myw-6s-UFe" firstAttribute="leading" secondItem="EoC-5q-saS" secondAttribute="leading" id="9Ay-31-kWT"/>
                     <constraint firstItem="myw-6s-UFe" firstAttribute="width" secondItem="EoC-5q-saS" secondAttribute="width" id="Bx8-e4-cAr"/>
-                    <constraint firstItem="F1w-Ng-d4I" firstAttribute="top" secondItem="RZc-WS-iR5" secondAttribute="bottom" constant="8" id="Eqb-i4-yQw"/>
+                    <constraint firstItem="F1w-Ng-d4I" firstAttribute="top" secondItem="RZc-WS-iR5" secondAttribute="bottom" constant="15" id="Eqb-i4-yQw"/>
                     <constraint firstItem="EoC-5q-saS" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="KBd-KT-Igv"/>
                     <constraint firstItem="RZc-WS-iR5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="ML8-hB-0od"/>
                     <constraint firstItem="myw-6s-UFe" firstAttribute="top" secondItem="EoC-5q-saS" secondAttribute="bottom" constant="15" id="RFq-vY-Owl"/>
@@ -172,13 +172,13 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="btn1" destination="EoC-5q-saS" id="hCX-Iz-Q0P"/>
-                <outlet property="btn2" destination="myw-6s-UFe" id="D6s-5t-8vB"/>
-                <outlet property="btn3" destination="9Pt-9W-ykd" id="Ur5-NA-2VS"/>
                 <outlet property="imgView" destination="RZc-WS-iR5" id="t5I-mR-qrb"/>
                 <outlet property="nextBtn" destination="hkV-Wy-NSF" id="cXo-9f-y4L"/>
                 <outlet property="nextView" destination="F1w-Ng-d4I" id="g0T-KR-9nv"/>
                 <outlet property="standfirstLb" destination="ibI-v0-UFA" id="WZj-BM-ANY"/>
+                <outletCollection property="answersBtn" destination="myw-6s-UFe" collectionClass="NSMutableArray" id="vLm-pd-fQP"/>
+                <outletCollection property="answersBtn" destination="9Pt-9W-ykd" collectionClass="NSMutableArray" id="3qY-3o-HFr"/>
+                <outletCollection property="answersBtn" destination="EoC-5q-saS" collectionClass="NSMutableArray" id="tjS-yD-wKI"/>
             </connections>
             <point key="canvasLocation" x="33" y="22"/>
         </tableViewCell>

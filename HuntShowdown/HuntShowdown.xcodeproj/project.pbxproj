@@ -17,11 +17,13 @@
 		C600EC4E20F76B9200F09B30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C600EC4C20F76B9200F09B30 /* LaunchScreen.storyboard */; };
 		C600EC5920F76B9200F09B30 /* HuntShowdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C600EC5820F76B9200F09B30 /* HuntShowdownTests.swift */; };
 		C600EC8020F76BDB00F09B30 /* DailyBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = C600EC7B20F76BDB00F09B30 /* DailyBuzz.swift */; };
-		C600EC8120F76BDB00F09B30 /* 1game.json in Resources */ = {isa = PBXBuildFile; fileRef = C600EC7D20F76BDB00F09B30 /* 1game.json */; };
+		C600EC8120F76BDB00F09B30 /* test-game.json in Resources */ = {isa = PBXBuildFile; fileRef = C600EC7D20F76BDB00F09B30 /* test-game.json */; };
 		C600EC8220F76BDB00F09B30 /* game.json in Resources */ = {isa = PBXBuildFile; fileRef = C600EC7E20F76BDB00F09B30 /* game.json */; };
 		C600EC8320F76BDB00F09B30 /* ExtractionPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C600EC7F20F76BDB00F09B30 /* ExtractionPoint.swift */; };
 		C600EC8620F7736F00F09B30 /* JeopardyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C600EC8420F7736F00F09B30 /* JeopardyTableViewCell.swift */; };
 		C600EC8720F7736F00F09B30 /* JeopardyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C600EC8520F7736F00F09B30 /* JeopardyTableViewCell.xib */; };
+		C600EC8C20F98FEC00F09B30 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C600EC8B20F98FEC00F09B30 /* ProgressView.swift */; };
+		C600EC8E20F9B42100F09B30 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C600EC8D20F9B42100F09B30 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,11 +53,13 @@
 		C600EC5820F76B9200F09B30 /* HuntShowdownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuntShowdownTests.swift; sourceTree = "<group>"; };
 		C600EC5A20F76B9200F09B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C600EC7B20F76BDB00F09B30 /* DailyBuzz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyBuzz.swift; sourceTree = "<group>"; };
-		C600EC7D20F76BDB00F09B30 /* 1game.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1game.json; sourceTree = "<group>"; };
+		C600EC7D20F76BDB00F09B30 /* test-game.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "test-game.json"; sourceTree = "<group>"; };
 		C600EC7E20F76BDB00F09B30 /* game.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = game.json; sourceTree = "<group>"; };
 		C600EC7F20F76BDB00F09B30 /* ExtractionPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtractionPoint.swift; sourceTree = "<group>"; };
 		C600EC8420F7736F00F09B30 /* JeopardyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeopardyTableViewCell.swift; sourceTree = "<group>"; };
 		C600EC8520F7736F00F09B30 /* JeopardyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JeopardyTableViewCell.xib; sourceTree = "<group>"; };
+		C600EC8B20F98FEC00F09B30 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		C600EC8D20F9B42100F09B30 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D2F93AD43D3B2F655E4D5952 /* Pods_HuntShowdownDefault_HuntShowdown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuntShowdownDefault_HuntShowdown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06883F9FCACD6DAA5E95479 /* Pods-HuntShowdownDefault-HuntShowdown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuntShowdownDefault-HuntShowdown.release.xcconfig"; path = "Pods/Target Support Files/Pods-HuntShowdownDefault-HuntShowdown/Pods-HuntShowdownDefault-HuntShowdown.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,12 +130,10 @@
 				C600EC4120F76B8E00F09B30 /* AppDelegate.swift */,
 				C600EC4320F76B8E00F09B30 /* MasterViewController.swift */,
 				C600EC4520F76B8E00F09B30 /* DetailViewController.swift */,
-				C600EC7B20F76BDB00F09B30 /* DailyBuzz.swift */,
-				C600EC7F20F76BDB00F09B30 /* ExtractionPoint.swift */,
-				C600EC4720F76B8E00F09B30 /* Main.storyboard */,
-				C600EC8420F7736F00F09B30 /* JeopardyTableViewCell.swift */,
-				C600EC8520F7736F00F09B30 /* JeopardyTableViewCell.xib */,
+				C600EC9020F9D7A700F09B30 /* Models & Helpers */,
+				C600EC8F20F9D79A00F09B30 /* Views */,
 				C600EC4A20F76B9200F09B30 /* Assets.xcassets */,
+				C600EC4720F76B8E00F09B30 /* Main.storyboard */,
 				C600EC4C20F76B9200F09B30 /* LaunchScreen.storyboard */,
 				C600EC7C20F76BDB00F09B30 /* Resouses */,
 				C600EC4F20F76B9200F09B30 /* Info.plist */,
@@ -151,10 +153,30 @@
 		C600EC7C20F76BDB00F09B30 /* Resouses */ = {
 			isa = PBXGroup;
 			children = (
-				C600EC7D20F76BDB00F09B30 /* 1game.json */,
+				C600EC7D20F76BDB00F09B30 /* test-game.json */,
 				C600EC7E20F76BDB00F09B30 /* game.json */,
 			);
 			path = Resouses;
+			sourceTree = "<group>";
+		};
+		C600EC8F20F9D79A00F09B30 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C600EC8B20F98FEC00F09B30 /* ProgressView.swift */,
+				C600EC8420F7736F00F09B30 /* JeopardyTableViewCell.swift */,
+				C600EC8520F7736F00F09B30 /* JeopardyTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C600EC9020F9D7A700F09B30 /* Models & Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C600EC7F20F76BDB00F09B30 /* ExtractionPoint.swift */,
+				C600EC8D20F9B42100F09B30 /* Extensions.swift */,
+				C600EC7B20F76BDB00F09B30 /* DailyBuzz.swift */,
+			);
+			path = "Models & Helpers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,7 +268,7 @@
 			files = (
 				C600EC4E20F76B9200F09B30 /* LaunchScreen.storyboard in Resources */,
 				C600EC8720F7736F00F09B30 /* JeopardyTableViewCell.xib in Resources */,
-				C600EC8120F76BDB00F09B30 /* 1game.json in Resources */,
+				C600EC8120F76BDB00F09B30 /* test-game.json in Resources */,
 				C600EC4B20F76B9200F09B30 /* Assets.xcassets in Resources */,
 				C600EC4920F76B8E00F09B30 /* Main.storyboard in Resources */,
 				C600EC8220F76BDB00F09B30 /* game.json in Resources */,
@@ -372,7 +394,9 @@
 				C600EC8020F76BDB00F09B30 /* DailyBuzz.swift in Sources */,
 				C600EC8620F7736F00F09B30 /* JeopardyTableViewCell.swift in Sources */,
 				C600EC4620F76B8E00F09B30 /* DetailViewController.swift in Sources */,
+				C600EC8E20F9B42100F09B30 /* Extensions.swift in Sources */,
 				C600EC8320F76BDB00F09B30 /* ExtractionPoint.swift in Sources */,
+				C600EC8C20F98FEC00F09B30 /* ProgressView.swift in Sources */,
 				C600EC4420F76B8E00F09B30 /* MasterViewController.swift in Sources */,
 				C600EC4220F76B8E00F09B30 /* AppDelegate.swift in Sources */,
 			);
@@ -538,6 +562,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6AT63883WK;
 				INFOPLIST_FILE = HuntShowdown/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -546,7 +571,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -558,6 +583,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6AT63883WK;
 				INFOPLIST_FILE = HuntShowdown/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -566,7 +592,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

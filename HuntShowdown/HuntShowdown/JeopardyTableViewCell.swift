@@ -12,21 +12,16 @@ import Kingfisher
 class JeopardyTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imgView: UIImageView!
-    @IBOutlet var btn1: UIButton!
-    @IBOutlet var btn2: UIButton!
-    @IBOutlet var btn3: UIButton!
     @IBOutlet weak var nextView: UIView!
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var standfirstLb: UILabel!
-    var quiz: Quiz!
-
+    @IBOutlet var answersBtn: [UIButton]!
     typealias BuzzingClosure = (Int) -> Void
     typealias NextClosure = () -> Void
- 
     var nextQuiz: NextClosure?
     var buzzing: BuzzingClosure?
-    
     var reading: (() -> Void)?
+    var quiz: Quiz!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -43,10 +38,21 @@ class JeopardyTableViewCell: UITableViewCell {
                 buzzing(0)
                 return
             }
-            buzzing( sender.tag == quiz.correctAnswerIndex ? 1 : -1 )
-            
-            updateUI(showQuiz: false)
-            standfirstLb.text = quiz.standFirst
+            UIView.animate(withDuration: 0.5, animations: {
+                for btn in self.answersBtn {
+                    if btn.tag == self.quiz.correctAnswerIndex {
+                        btn.backgroundColor = UIColor.rightAnswerBgColor
+                        
+                    } else {
+                        btn.backgroundColor = UIColor.wrongAnswerBgColor
+                    }
+                }
+            }, completion: { (stop) in
+                buzzing( sender.tag == self.quiz.correctAnswerIndex ? 1 : -1 )
+                
+                self.showStandFirst()
+            })
+
         }
     }
     
@@ -69,20 +75,25 @@ class JeopardyTableViewCell: UITableViewCell {
         imgView.kf.setImage(with: URL(string: quiz.imageUrl))
         
         if quiz.headlines.count > 2 {
-            btn1.setTitle(quiz.headlines[0], for: UIControlState.normal)
-            btn2.setTitle(quiz.headlines[1], for: UIControlState.normal)
-            btn3.setTitle(quiz.headlines[2], for: UIControlState.normal)
-            
-            btn1.titleLabel?.numberOfLines = 0
-            btn2.titleLabel?.numberOfLines = 0
-            btn3.titleLabel?.numberOfLines = 0
+            for btn in answersBtn {
+                btn.setTitle(quiz.headlines[btn.tag], for: .normal)
+                btn.titleLabel?.numberOfLines = 0
+            }
         }
     }
     
+    func showStandFirst() {
+        UIView.animate(withDuration: 0.5, animations: {
+            self.updateUI(showQuiz: false)
+            self.standfirstLb.text = self.quiz.standFirst
+        })
+    }
+    
     func updateUI(showQuiz: Bool) {
-        nextView.isHidden = showQuiz
-        btn1.isHidden = !showQuiz
-        btn2.isHidden = !showQuiz
-        btn3.isHidden = !showQuiz
+        nextView.alpha = showQuiz ? 0 : 1
+        answersBtn.forEach { (btn) in
+            btn.isHidden = !showQuiz
+            btn.backgroundColor = UIColor.white
+        }
     }
 }

@@ -11,24 +11,17 @@ import UIKit
 class ExtractionPoint: NSObject {
     
     func getDailyBuzz() -> DailyBuzz? {
-        let path = Bundle.main.path(forResource: "1game", ofType: "json")
+        return getDailyBuzz("game")
+    }
+    
+    func getDailyBuzz(_ fileName: String) -> DailyBuzz? {
+        let path = Bundle.main.path(forResource: fileName, ofType: "json")
         if path == nil {
             return nil
         }
         let content = try? String(contentsOfFile: path!)
         let data =  content?.data(using: .utf8)
         let dailyBuzz = try? JSONDecoder().decode(DailyBuzz.self, from: data!)
-        
-        /*
-        var catagories: [String] = [String]()
-        if let quiz = dailyBuzz?.items {
-            for aDailyBuzz in quiz {
-                if !catagories.contains(aDailyBuzz.section) {
-                    catagories.append(aDailyBuzz.section)
-                }
-            }
-        }
-        */
         return dailyBuzz
     }
     

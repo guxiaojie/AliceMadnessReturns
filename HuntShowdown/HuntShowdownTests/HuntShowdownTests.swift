@@ -33,4 +33,38 @@ class HuntShowdownTests: XCTestCase {
         }
     }
     
+    func testJSONParser() {
+        let dailyBuzz = ExtractionPoint().getDailyBuzz("test-game")
+        if dailyBuzz?.items != nil {
+            if (dailyBuzz?.items.count)! > 0 {
+                let quiz = dailyBuzz?.items[0]
+                if quiz != nil {
+                    
+                } else {
+                    XCTFail("json parser failed - when comes to quiz")
+                }
+            }
+        } else {
+            XCTFail("json parser failed")
+        }
+    }
+    
+    func testGetQuiz() {
+        let viewController = MasterViewController()
+        let index = 617
+        let amount = viewController.quiz(index: index)
+        if amount <= index {
+            XCTFail("out of range")
+        }
+    }
+    
+    func testGetQuizInRange() {
+        let viewController = MasterViewController()
+        let index = 20
+        let amount = viewController.quiz(index: index)
+        if amount <= index {
+            XCTFail("out of range")
+        }
+    }
+    
 }
