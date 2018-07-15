@@ -22,7 +22,7 @@ extension UIColor {
     static let outlineStrokeColor = UIColor.rgb(r: 234, g: 46, b: 111)
     static let trackStrokeColor = UIColor.rgb(r: 56, g: 25, b: 49)
 
-    static let wrongAnswerBgColor = UIColor.rgba(r: 100, g: 150, b: 125, a: 0.5)
-    static let rightAnswerBgColor = UIColor.rgba(r: 172, g: 92, b: 92, a: 0.5)
+    static let wrongAnswerBgColor = UIColor.rgba(r: 217, g: 78, b: 72, a: 0.5)
+    static let rightAnswerBgColor = UIColor.rgba(r: 100, g: 150, b: 125, a: 0.8)
 }
 

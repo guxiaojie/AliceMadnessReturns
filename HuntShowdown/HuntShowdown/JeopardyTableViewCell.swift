@@ -42,7 +42,6 @@ class JeopardyTableViewCell: UITableViewCell {
                 for btn in self.answersBtn {
                     if btn.tag == self.quiz.correctAnswerIndex {
                         btn.backgroundColor = UIColor.rightAnswerBgColor
-                        
                     } else {
                         btn.backgroundColor = UIColor.wrongAnswerBgColor
                     }
